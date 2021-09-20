@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	background-image: url(../images/background.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.runway{
+	background-image: url(../images/road.jpg);
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.plain{
+	width: 450px;
+	position: absolute;
+	right: -100px;
+	bottom: 120px;
+	animation: plan 4s linear infinite;
+	transform-origin: 100% 50%;
+}
+@keyframes plan{
+	0%{
+		transform: translateX(0px) translateY(0px) rotate(0deg);
+	}
+	30%{
+		transform: translateX(-500px) translateY(0px) rotate(0deg);
+	}
+	100%{
+		transform: translateX(-1500px) translateY(-200px) rotate(20deg);
+	}
+}
